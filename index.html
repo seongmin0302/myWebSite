@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+   
+
+// $(document).ready(function () {
+// $('.Stories').click( function(event){
+//     event.preventDefault();
+//     alert("dsklfj");
+
+//     $(this).css("display","block");
+//     $('.about').css("display","none");
+//     $('.contact').css("display","none");
+
+
+// })})
+
+
+
+
+
+$(document).ready(function () {
+    $('.category li a').click(function(event){
+        event.preventDefault();
+        var clickedMenu = $(this).text().toLowerCase(); // Get the text of the clicked menu
+
+        // Hide all pages
+        $('.home').css("display","none");
+        $('.stories').css("display","none");
+        $('.about').css("display","none");
+        $('.contact').css("display","none");
+
+        // Show only the clicked page
+        $('.' + clickedMenu).css("display","block");
+
+
+
+    });
+
+
+    $('.nav .title').click(function(e){
+        console.log("sdfjd")
+        $('.home').css("display","block");
+        $('.stories').css("display","none");
+        $('.about').css("display","none");
+        $('.contact').css("display","none");
+    })
+
+    $('.submit_button').click(function(e){
+        e.preventDefault();
+        alert("this button is not working yet")
+        
+    })
+
+
+
+    $('.search_btn').click(function(e){
+        e.preventDefault();
+        alert("this button is not working yet")
+    })
+
+    }
+);
+
+
+
+
+
+</script>
+
+
+<title>Document</title>
+    
+</head>
+<body>
+<nav class="nav">
+    <ul class="category">
+        <li><a href="">stories</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+
+    </ul>
+    <span class="title">Voyager,</span>
+<a class="search_btn" href="">search</a>
+</nav>
+
+
+<div class="home page">
+
+
+    <div class="pictures">
+
+
+<img id="wave" src="img/파도.jpg" alt="">
+        <img id="사다리" src="img/사다리.jpg">
+        <img id="항해" src="img/항해.jpg">
+        <img id="cloud"  src="img/구름.jpg" alt="sdfsf">
+        <img id="천" src="img/천.jpg" alt="">
+        <span class="sentence">seongmin,<br>jeon
+        </span>
+        </div>
+
+        
+<div class="class="welcome">
+    <h1 class="big_letter">voyag<br>er,</h1>
+
+  
+     <span class="welcome_title">welcome</span>
+<p class="welcome_text">
+    Hello, my name is Sungmin Jeon. I am studying computer engineering at Kangwon National University. My favorite word is voyager.<br> <br><small><i>voyager : a person who goes on a long and moments dangerous journey.</i></small><br><br>As this word means, I am a developer who does not fear challenges under any circumstances and courageously moves forward.
+</p></div>
+
+<div class="big_rest_box">
+<img class="big_rest" src="https://t1.daumcdn.net/thumb/R720x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1bku/image/ayykkpOETQWnh0AmFfwzG-vgL68.jpg"></img>
+</div>
+
+</div>
+
+
+<div class="stories">
+
+
+    <div class="journal">
+    <h1 class="journal_letter">log;</h1>
+    <span class="journal_text">What I've learned so far.</span>
+
+
+    <ul class="study_list">
+        <li class="java"><h1> java</h1><p>My main language is Java. I was very impressed with the characteristics because it is object-oriented in Java. It makes me happy that this characteristic allows me to create a cooler code.</p></li>
+        <li class="python"><h1>python</h1><p>I'm not used to Python yet because I don't use it very often, but Python is used in many fields, so I'll try to further develop my ability to handle Python in the future.</p></li>
+        <li class="algorithm"><h1>algorithm</h1><p>Algorithms are a step that you have to go through to become a good developer at least once. I learned how to come up with better codes through this class. I'm still not good at it, but I want to make a lot of efficient and concise codes through a lot of effort.</p></li>
+        <li class="etc"><h1>etc;</h1><p>computer graphics , operating System, data analysis programing, data structure.. </p></li>
+
+    </ul>
+
+</div>
+
+
+<div class="plans page">
+<h1>plans;</h1>
+<span class="plans_text">what i want to learn more!</span>
+<ul class="plans_list">
+    <li>Baekjun achieved gold</li>
+    <li>Doing a project</li>
+    <li>Create an app</li>
+</li>
+</ul>
+
+</div>
+
+
+
+
+  
+   
+
+</div>
+
+
+<div class="about page">
+<h1  class="about_title"> abou <br>t,</h1>
+<span class="about_p">Things I like</span>
+
+
+    <ul class="about_container">  
+
+        <li> <h1>1.scoccer</h1><img src="img/축구.jpg" alt=""><p>kyaa!!! na jom meosisseo!</p></li>
+
+
+    <li><h1>3. hiking</h1><img src="img/나무위에 발올리기.jpg" alt="">
+    <p > I often take a walk for my health.</p></li>
+    <li><h1>4. teaching</h1><img src="img/teacher.jpg" alt="">
+    <p > I like to give explanations to better understand what I have learned.</p></li>
+    <li><h1>5.eating</h1><img src="img/맛있다.jpg" alt="">
+        <p > I feel happy through eating delicious food.</p></li> 
+        <li><h1>6.cooking</h1><img src="img/cooking.jpg" alt="">
+            <p > I enjoy cooking and I am happy to eat the food I made.</p></li>
+
+
+
+
+
+
+    </ul>
+
+
+</div>
+<div class="contact page">
+    <h1>Contact me.</h1>
+    <p>Contact us for all your inquiries and let us assist you in bringing your vision to life
+
+        with our expertise and dedication.</p>
+
+<hr>
+        <form method="post" action="">
+            <label for="name">
+Name
+            </label>
+            <input type="text" id="name" name="">
+
+               <label for="phone" >
+PHONE
+               </label> <input type="number" name="phone" id="phone">
+<label for="contents">
+CONTENTS
+</label>
+<textarea name="" id="contents"></textarea>
+<button class="submit_button"type="submit">submit</button>       
+</form>
+</div>
+
+
+
+<footer>
+<h1>seongmin EE Webpage</h1>
+<p>Copyright © 2024 seongmin. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

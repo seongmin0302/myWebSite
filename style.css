@@ -1,0 +1,537 @@
+
+        *{
+            box-sizing: border-box;
+            font-family: "Fira Sans", sans-serif;
+        }
+        body{
+            overflow-x: hidden;}
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        ul{
+            list-style: none;
+            padding-left: 30px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 1%;
+        }
+        .nav{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            position: fixed;
+            z-index: 5;
+            color: white;
+            background-color: rgba(128, 128, 128, 0.5);
+        }
+
+        .category{
+           display: flex; 
+        }
+        .category>li{
+            padding-right: 10px;
+        }
+
+        .category>li>a:hover{
+color: rgb(163, 145, 145);
+
+        }
+        .title{
+            cursor:pointer;
+            font-size: 30px;
+            position:  relative;
+            left:-58px
+        }
+
+
+        .title:hover{
+            color: rgb(88, 109, 131);
+
+        }
+        .search_btn{
+            margin-right: 40px;
+            width:60px;
+            height: 50px;
+padding-top:12px ;
+        
+        }
+
+        .search_btn:hover{
+color: rgb(163, 145, 145);
+        }
+        
+
+.hide{
+   display: none;
+}
+
+/* -------------------home--------------------- */
+.home{background-color: rgba(95, 95, 95, 0.3);
+}
+
+        .main_video{
+            width:100%;
+            text-align: center;
+            position: relative;
+           
+        }
+
+        .main_name{
+            width: 100%;
+            margin: auto;
+            color: white;
+            position: absolute;
+            top:30%;
+           
+        }
+        .main_english_name{
+            width: 100%;
+            margin: auto;
+            color: rgb(0, 0, 0);
+            position: absolute;
+            top:40%;
+        }
+            
+        .stars{
+           width: 100%;
+        }
+        
+        .pictures{
+            width: 100%;
+            height: 700px;
+            position: relative;
+            
+
+        }
+        .pictures img{
+            position: absolute;
+          
+        
+        }
+        #wave{
+            width: 300px;
+            height: auto;
+            z-index: 100;
+            bottom:-30%;
+            left: 55%;
+        }
+        
+/* #책장{
+    right:20%;
+    top:20%;
+}
+
+
+#cloud{
+   
+    right:40px;
+    bottom: 30px;
+
+}
+#rainbow{bottom: 20%;
+    right: 35%;
+}
+#apollo{
+    bottom: 40%;
+    left: 10%;
+} */
+
+
+#책장{
+    right:40%;
+    top:100%;
+    width: 400px;
+    height: auto;
+   
+   
+}
+#항해{
+    left:35%;
+    top:20%;
+    width:  500px;
+    height: auto;
+    filter:grayscale(80%);
+   
+   
+}
+
+
+#cloud{
+   
+    right:40px;
+    bottom: -25%;   
+    width:300px;
+    height: auto;
+    filter:grayscale(80%);
+    
+
+
+}
+#천{
+width: 300px;
+left:10%;
+height: auto;    
+bottom: 10%;
+filter: grayscale(20%);
+
+}
+
+#사다리{
+    z-index: 1;
+    width: 200px;
+    left:30%;
+    height: auto;    
+    bottom: -20%;
+    filter: grayscale(10%);
+    
+    }
+
+
+#apollo{
+    bottom: 40%;
+    top: 10%;
+}
+
+/* .sentence{
+    
+    position: absolute;
+    font-size: 100px;
+    left:35%;
+    top:70%;
+    z-index: 4;
+    color: rgb(251, 249, 249);
+    font-weight: bold;
+    transform: rotate(-10deg);     
+    transition: all ease-in 100ms;
+   
+    
+} 
+*/
+
+
+.sentence{
+    
+    position: absolute;
+    font-size: 150px;
+    right:0%;
+    top:35%;
+    z-index: 4;
+    color: rgb(251, 249, 249);
+    font-weight: bold;
+    /* transform: rotate(-10deg);  */     
+    transition: all ease-in 100ms;
+ 
+}
+
+.big_rest_box{
+    background-color: white;
+    width:100%;
+    height: 500px;
+}
+.big_rest{
+    width: 400px;
+    height: auto;
+position: absolute;
+right: -100px;
+
+
+
+}
+
+.welcome{
+    z-index: 6;
+    color:rgb(0, 0, 0);
+    width: 400px;
+    height: auto;
+    
+  
+}
+.big_letter{
+    margin-top :200px ;
+    font-size: 150px;
+    padding-left: 80px;
+    
+}
+.welcome_title{
+    float: left;
+    margin-left: 30px;
+    font-size: 30px;
+    padding-left: 50px;
+ 
+}
+.welcome_text{width: 700px;
+    margin-left: 250px;
+    font-size: 30px;
+    width: 500px;
+
+   
+}
+
+
+
+/* -------------stories------------- */
+.stories{
+    width: 100%;
+    height: auto;
+   
+    text-align: center;
+    padding-bottom:100px;
+    display: none;
+}
+
+.journal{
+    background-color: rgb(235, 235, 235);
+}
+.journal_letter{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.journal_text{
+    padding-left: 30px;
+}
+
+.study_list p{
+    font-size: 24px;
+    width:50vw;
+} 
+
+
+.etc{
+    font-size: 140px;
+    font-weight: bold;
+   
+   
+}
+.etc h1{
+    margin-bottom: 0;
+}
+
+.etc p{
+    font-size: 30px;
+    width:100vw;
+    padding-bottom: 200px;
+}
+
+.study_list li{
+    width: 200px;
+    font-size: 140px;
+    
+
+}
+
+.study_list span{
+    font-size: 20px;
+    width:100px;
+
+    
+}
+
+
+
+.plans{
+    padding:100px 0;
+    
+}
+
+.plans .plans_list{
+    font-size: 70px;
+}
+
+.plans_text{
+    display: block;
+    padding: 100px 0;
+}
+
+/* --------------------about-------------------- */
+.about{
+    display: none;
+   width: 100%;
+   height: auto;
+   padding:0 100px;
+
+}
+.about_p{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+    margin: 50px 0;
+    margin-bottom: 300px;
+}
+.about_container{
+padding: 20px 80px;
+text-align: center;
+
+}
+
+.about img{
+    width: 30%;
+    height: auto;
+    filter: grayscale(60%);
+}
+
+
+.about_title{
+    font-size: 100px;
+    margin: 0;
+    padding: 200px 0;
+}
+
+
+
+/* -----------------contact--------------------- */
+.contact{
+    display: none;
+    width: 100%;
+    height: 900px;
+   padding-top:200px ;
+   margin-left: 20px;
+
+
+}
+.contact h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+.contact p{
+    width: 70%;
+    margin: 50px 0;
+    line-height: 40px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+.contact label{
+    margin-bottom: 4px;
+}
+
+input, textarea{
+    border: 1px solid rgb(202, 200, 200);
+    width: 90%;
+    height: 30px;
+    margin: 10px 0;
+    padding-left: 20px;
+    font-size: 15px;
+
+}
+textarea{
+    height: 80px;
+    padding: 10px;
+
+}
+button{
+    width: 70px;
+    height: 30px;
+    background-color: black;
+    color: rgb(196, 192, 192);
+    
+}
+button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+    padding-top: 100px;
+    padding-left: 20px;
+width: 100%;
+height: 300px;
+background-color: black;
+color: white;
+}
+@media (max-width:600px) {
+
+    .nav{
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .category{
+        flex-direction: column;
+        
+    }
+    .category li{
+       padding: 10px;
+    }
+    .search_btn {
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        padding: 0;
+    }
+    .nav .title{
+display: none;
+    }
+    .home{
+        height:auto;
+    }
+
+
+    #cloud{width: 100%;}
+    #사다리{width: 100%;}
+    #천{width: 100%;}
+    #wave{width: 100%;}
+    #항해{width: 100%;}
+    .sentence{
+        left:40px;
+        top:350px;
+        font-size: 90px;
+    }
+    .big_letter{
+        font-size: 130px;
+    }
+
+    .welcome_title{
+        
+        float: left;
+        margin-top: 30px;
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+    .welcome_text{
+        float: left;
+        margin-left: 30px;
+        font-size: 20px;
+        padding-left: 50px;
+    }
+
+
+   .pictures{
+    height: auto;
+ 
+    padding-top:200px;
+    
+   }.pictures img{
+        position: static;
+        width:100%;
+        height: auto;
+    }
+
+    .big_rest{
+        display: none;
+    }
+    .study_list li{width: 100%;}
+    .study_list p{
+        width: 100%;
+        text-align: center;
+        padding: 100px;
+    }
+    .study_list li{
+        font-size: 50px;
+        
+    
+    }
+}
